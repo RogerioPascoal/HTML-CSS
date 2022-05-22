@@ -4,20 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste de imagem de fundo</title>
+    <title>Fundo fixo de tela</title>
 </head>
 <style>
     body{
+        height: 100vh;
+        /*
         background-color: black;
         background-image: url('imagens/wallpaper002.jpg');
         background-position:  center top;
         background-repeat: no-repeat;
-        background-size: cover; /*Outros valores: auto / 100% 100% / Xpx Xpx / contain */
+        background-size: cover; Outros valores: auto / 100% 100% / Xpx Xpx / contain
+        background-attachment: fixed; Scroll ou fixed
+        */
+
+        /*
+        shorthand - background
+        color > image > position > repeat > [size] > attachment
+
+        o size tem que ser declarado a parte (conforme abaixo) pois mesmo tendo na W3C, não funcionou na shorthand
+        
+        */
+        
+        background: black url('imagens/wallpaper002.jpg') no-repeat fixed;
+        background-size: cover;
     }
 
     main{
         background-color: white;
-        width: 400PX;
+        max-width: 700PX;
         padding: 10PX;
         margin: auto;
         border: 1px solid darkblue;
@@ -32,6 +47,21 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione esse repellat aut recusandae distinctio ut voluptatem voluptates explicabo sit sequi, illo earum perspiciatis nemo eos suscipit nisi. Dolore, aperiam ad!
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae similique, vero excepturi minus doloribus assumenda dolores. Debitis labore qui nulla odit earum ut eos, eius, nobis dolorum, nostrum reprehenderit asperiores.
         </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolores obcaecati cum ut rem. Adipisci minima iste quaerat earum excepturi aliquam praesentium est? Ut reiciendis consectetur quo sit quibusdam incidunt! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit velit fugit esse! Excepturi, hic sunt. Voluptas sint necessitatibus quod porro nostrum cum alias optio distinctio, iure inventore quae rem modi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis laboriosam, id voluptate illo aperiam culpa fugiat neque dolorem? Aut modi sapiente itaque similique incidunt cumque beatae. Eligendi maxime aliquam laboriosam.
+
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium exercitationem ullam voluptatibus officiis architecto, nemo praesentium possimus, voluptatum excepturi ea ratione rem ipsum dolorum! Laborum autem quo reiciendis quibusdam amet?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione esse repellat aut recusandae distinctio ut voluptatem voluptates explicabo sit sequi, illo earum perspiciatis nemo eos suscipit nisi. Dolore, aperiam ad!
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae similique, vero excepturi minus doloribus assumenda dolores. Debitis labore qui nulla odit earum ut eos, eius, nobis dolorum, nostrum reprehenderit asperiores.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolores obcaecati cum ut rem. Adipisci minima iste quaerat earum excepturi aliquam praesentium est? Ut reiciendis consectetur quo sit quibusdam incidunt! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit velit fugit esse! Excepturi, hic sunt. Voluptas sint necessitatibus quod porro nostrum cum alias optio distinctio, iure inventore quae rem modi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis laboriosam, id voluptate illo aperiam culpa fugiat neque dolorem? Aut modi sapiente itaque similique incidunt cumque beatae. Eligendi maxime aliquam laboriosam.
+
+        </p>
+
     </main>
     
 </body>
